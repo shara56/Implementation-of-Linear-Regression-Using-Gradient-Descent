@@ -33,6 +33,7 @@ def computeCost(X,y,theta):
   m=len(y)
   h=X.dot(theta)  
   square_err=(h-y)**2 
+
   return 1/(2*m) * np.sum(square_err)  
   
   data_n=data.values
@@ -41,7 +42,7 @@ X=np.append(np.ones((m,1)),data_n[:,0].reshape(m,1),axis=1)
 y=data_n[:,1].reshape(m,1)
 theta=np.zeros((2,1))
 
-computeCost(X,y,theta)   # function call
+computeCost(X,y,theta)   
 
 def gradientDescent(X,y,theta,alpha,num_iters):
   
@@ -86,19 +87,28 @@ predict2=predict(np.array([1,7]),theta)*10000
 print("For population = 70,000, we predict a profit of $"+str(round(predict2,0)))
 ```
 ## Output:
-## PROFIT PREDICTION: 
-![ML-301](https://github.com/hariprasath5106/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/111515488/2cde1c69-4c5a-4f55-a437-6f3bc558bfd0)
-## COST FUNCTION:
-![ML-302](https://github.com/hariprasath5106/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/111515488/7fa78bfc-fbaf-4c9d-9e2e-6e79e535d673)
-## GRADIENT DESCENT:
-![ML-303](https://github.com/hariprasath5106/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/111515488/c31d1c5d-9ad3-465e-86af-7daff0dec42c)
-## COST FUNCTION USING GRADIENT DESCENT:
-![ML-304](https://github.com/hariprasath5106/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/111515488/a80194fe-b235-4336-80b6-99b05f18977d)
-## GRAPH WITH BEST FIT LINE (PROFIT PREDICTION):
-![ML-305](https://github.com/hariprasath5106/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/111515488/7d20f237-4293-44dd-98a1-ab1daf6baef9)
-## PROFIT PREDICTION FOR A POPULATION OF 35,000:
-![ML-306](https://github.com/hariprasath5106/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/111515488/66f88a50-2116-4b74-8503-0d64cc58dac7)
-## PROFIT PREDICTION FOR A POPULATION OF 70,000:
-![ML-307](https://github.com/hariprasath5106/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/111515488/499887d5-87cf-4640-8f78-4da05b7cf50a)
-# Result:
-Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
+### PROFIT PREDICTION: 
+![image](https://github.com/yuvabharathib/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497404/71b05ea9-fd16-4828-8b36-9768ee77997b)
+
+### COST FUNCTION:
+![image](https://github.com/yuvabharathib/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497404/05873274-134a-4b52-b94a-8877a1c487f7)
+
+### GRADIENT DESCENT:
+![image](https://github.com/yuvabharathib/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497404/653e9850-46f3-461b-b1dc-5825a7ba8ad6)
+
+### COST FUNCTION USING GRADIENT DESCENT:
+![image](https://github.com/yuvabharathib/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497404/0e8a75c2-cb0d-40a7-84c9-3ecbb4442732)
+
+### GRAPH WITH BEST FIT LINE (PROFIT PREDICTION):
+![image](https://github.com/yuvabharathib/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497404/3c55203e-8ac6-4fc1-8337-ed523dea80df)
+
+### PROFIT PREDICTION FOR A POPULATION OF 35,000:
+![image](https://github.com/yuvabharathib/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497404/44a13f5f-cebc-496e-a188-6dc36d6e1c48)
+
+### PROFIT PREDICTION FOR A POPULATION OF 70,000:
+![image](https://github.com/yuvabharathib/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/113497404/06b61fb9-313b-4fdb-85e1-f52c8e45b794)
+
+## Result:
+Thus the program to implement the linear regression using gradient descent is written and verified using python programming
+
+
