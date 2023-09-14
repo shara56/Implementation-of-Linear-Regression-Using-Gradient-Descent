@@ -30,13 +30,9 @@ plt.ylabel("Profit ($10,000)")
 plt.title("Profit Prediction")
 
 def computeCost(X,y,theta):
-  """
-  Take in a numpy array X, y , theta and generate the cost fuction in a linear regression model
-  """
   m=len(y)
-  h=X.dot(theta)  # length of training data
+  h=X.dot(theta)  
   square_err=(h-y)**2 
-
   return 1/(2*m) * np.sum(square_err)  
   
   data_n=data.values
